@@ -1,6 +1,7 @@
 # Tsai Analyzer
 
-Wiki Analyzer, developed it just for a fun, so this is still dirty codes. 
+Only for Linux currently.
+Chinese Wiki Analyzer, developed it just for a fun, so these are still dirty codes. 
 
 ### Python Requirements
   - numpy (with MKL)
