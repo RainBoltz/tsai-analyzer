@@ -1,15 +1,16 @@
 # Tsai Analyzer
 
-Only for Linux currently.
+Only for Linux currently. <br/>
 Chinese Wiki Analyzer, developed it just for a fun, so these are still dirty codes. 
 
 ### Python Requirements
-  - numpy (with MKL)
+  - python 3.5 or higher
+  - numpy (with MKL, it usually included if you install numpy from ***pip3 install numpy***)
   - gensim
   - scikit-learn
   - matplotlib
 ### other Requirements
-  - opencc (system version, not python)
+  - [opencc](https://github.com/BYVoid/OpenCC)
 
 # Preprocess
 1. download zh-wiki dumps from [here](https://dumps.wikimedia.org/zhwiki/latest/zhwiki-latest-pages-articles.xml.bz2). (all file named *-pages-articles.xml.bz2 is available)
@@ -19,7 +20,7 @@ Chinese Wiki Analyzer, developed it just for a fun, so these are still dirty cod
 5. Now you get a Trained zhWiki Word2Vec model!
 
 # Usage
-1. in the text file [anal](anal) (sorry for the imappropriate but that stands for ***anal***yze), you can add the words you want to find out in a 3-dimension space at each line, and the color for the word ( *format: [WORD],[COLOR]* ), then run [drawTsai.py](drawTsai.py)
+1. in the text file [anal](anal) ( sorry for the imappropriate but that stands for ***anal***.yze ), you can add the words you want to find out in a 3-dimension space at each line, and the color for the word ( *format: [WORD],[COLOR]* ), then run [drawTsai.py](drawTsai.py)
 
 2. if you want to find out the top-10 closest relation words for a word, you can run [drawGlobal.py](drawGlobal.py), and remember to add the words in [anal](anal)
 
